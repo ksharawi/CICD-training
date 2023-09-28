@@ -1,0 +1,11 @@
+name: GitHub Actions Reusable Workflow
+run-name: GitHub Action Reusable Workflow
+on:
+  push:
+    branches: [ "master", "develop" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  Reusable-caller-job:
+    uses: ./.github/workflows/basic-workflow.yml
